@@ -7,8 +7,8 @@ from django.views.decorators.http import require_GET, require_POST
 
 
 def task(request):
-    categories = Category.objects.all()
-    return render(request, "task.html", {"categories": categories})
+    categories = list(Category.objects.all().values('id', 'name', 'type'))
+    return JsonResponse({'categories': categories})
 
 # --- CATEGORY CREATION ---
 @csrf_exempt
