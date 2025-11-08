@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "fallback-secret-for-local")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["smartday-personal-productivity-tracker.onrender.com",
+    "localhost",]
 
 
 # Application definition
