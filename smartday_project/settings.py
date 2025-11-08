@@ -14,7 +14,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 def _split_env_list(name, default=""):
     return [s.strip() for s in config(name, default=default).split(",") if s.strip()]
 
-ALLOWED_HOSTS = _split_env_list("ALLOWED_HOSTS", default="localhost")
+ALLOWED_HOSTS = ["*"]
 
 # --- APPLICATIONS & MIDDLEWARE ----------------------------------------------
 INSTALLED_APPS = [
