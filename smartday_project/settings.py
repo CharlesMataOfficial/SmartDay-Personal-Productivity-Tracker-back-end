@@ -101,5 +101,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS origins (read from env; split by comma)
 CORS_ALLOWED_ORIGINS = _split_env_list(
-    "CORS_ALLOWED_ORIGINS", default="https://smart-day-personal-productivity-tra.vercel.app/"
+    "CORS_ALLOWED_ORIGINS", default="https://smart-day-personal-productivity-tra.vercel.app"
 )
